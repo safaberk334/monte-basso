@@ -27,6 +27,10 @@
         }
     }
 
+    // Fallback: bir kaynak yuklenemezse 'load' hic tetiklenmez ve
+    // preloader ekranda takili kalir. En gec 2 saniyede zorla gizle.
+    setTimeout(hidePreloader, 2000);
+
     // ============================================
     // Navbar Scroll Effect
     // ============================================
